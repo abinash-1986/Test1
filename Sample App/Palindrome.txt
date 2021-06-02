@@ -22,40 +22,15 @@ bool IsPalindrome(char f_str[])
 
 int main()
 {
-    if(IsPalindrome("1881"))
-    {
-      printf("1881 - String is a palindrome\n");
-    }
-    else
-    {
-        printf("1881 - String is not a palindrome\n");
-    }
-    
+    // Change string in IsPalindrome() to check for palindrome
     if(IsPalindrome("Dad"))
     {
-        printf("Dad - String is a palindrome\n");
+      printf("String is a palindrome\n");
     }
     else
     {
-        printf("Dad - String is not a palindrome\n");
+        printf("String is not a palindrome\n");
     }
     
-    if(IsPalindrome("Step on no pets"))
-    {
-        printf("Step on no pets - String is a palindrome\n");
-    }
-    else
-    {
-        printf("Step on no pets - String is not a palindrome\n");
-    }
-    
-    if(IsPalindrome("Hello World"))
-    {
-        printf("Hello World - String is a palindrome\n");
-    }
-    else
-    {
-        printf("Hello World - String is not a palindrome\n");
-    }
     return 0;
 }
