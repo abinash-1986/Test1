@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
+#include <ctype.h>
 
 bool IsPalindrome(char f_str[])
 {
@@ -22,14 +23,15 @@ bool IsPalindrome(char f_str[])
 
 int main()
 {
-    // Change string in IsPalindrome() to check for palindrome
-    if(IsPalindrome("Dad"))
+    // Change l_str to check for palindrome
+    char l_str[] = "Dad";
+    if(IsPalindrome(l_str))
     {
-        printf("String is a palindrome\n");
+        printf("%s- String is a palindrome\n", l_str);
     }
     else
     {
-        printf("String is not a palindrome\n");
+        printf("%s- String is not a palindrome\n", l_str);
     }
     
     return 0;
