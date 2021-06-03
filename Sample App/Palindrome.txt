@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
+#include <iostream>
 
 bool IsPalindrome(char f_str[])
 {
@@ -23,16 +24,20 @@ bool IsPalindrome(char f_str[])
 
 int main()
 {
-    // Change l_str to check for palindrome
-    char l_str[] = "Dad";
+    const int MAX_LEN = 100;
+    char l_str[MAX_LEN] = {'\0'};
+
+    printf("Please enter a string- ");
+    scanf("%[^\n]%*c", l_str);
+    
     if(IsPalindrome(l_str))
     {
-        printf("%s- String is a palindrome\n", l_str);
+       printf("%s -String is a palindrome\n", l_str);
     }
     else
     {
-        printf("%s- String is not a palindrome\n", l_str);
+        printf("%s -String is not a palindrome\n", l_str);
     }
-    
+
     return 0;
 }
